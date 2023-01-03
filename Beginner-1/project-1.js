@@ -1,0 +1,16 @@
+const closeface=document.querySelector('.closed')
+const openface=document.querySelector('.open')
+
+
+closeface.addEventListener('click',() =>{
+    if(openface.classList.contains('open')==true){
+        openface.classList.add('active');
+        closeface.classList.remove('active');
+    }
+})
+openface.addEventListener('click',()=>{
+    if(closeface.classList.contains('closed')){
+        closeface.classList.add('active');
+        openface.classList.remove('active');
+    }
+})
